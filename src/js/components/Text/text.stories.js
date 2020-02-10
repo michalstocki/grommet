@@ -1,8 +1,10 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
-import { Box, Grommet, Text } from 'grommet';
 import { grommet } from 'grommet/themes';
+import { Grommet } from '../Grommet';
+import Box from '../Box/Box/Box';
+import Text from './Text';
 
 const sizes = [
   'xxlarge',
@@ -31,5 +33,5 @@ const Color = () => (
 );
 
 storiesOf('Text', module)
-  .add('All', () => <All />)
-  .add('Color', () => <Color />);
+  .add('All', () => All())
+  .add('Color', () => Color());

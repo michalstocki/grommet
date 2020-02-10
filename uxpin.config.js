@@ -7,7 +7,7 @@ module.exports = {
           // 'src/js/components/Heading/Heading.js',
       //     'src/js/components/Markdown/Markdown/Markdown.js',
       //     'src/js/components/Paragraph/Paragraph.js',
-      //     'src/js/components/Text/Text.js',
+          'src/js/components/Text/Text.js',
         ],
       },
       {
