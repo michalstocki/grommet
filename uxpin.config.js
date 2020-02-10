@@ -1,15 +1,15 @@
 module.exports = {
   components: {
     categories: [
-      // {
-      //   name: 'Type',
-      //   include: [
-      //     'src/js/components/Heading/Heading.js',
+      {
+        name: 'Type',
+        include: [
+          // 'src/js/components/Heading/Heading.js',
       //     'src/js/components/Markdown/Markdown/Markdown.js',
       //     'src/js/components/Paragraph/Paragraph.js',
       //     'src/js/components/Text/Text.js',
-      //   ],
-      // },
+        ],
+      },
       {
         name: 'Controls',
         include: [
@@ -19,8 +19,8 @@ module.exports = {
           'src/js/components/Button/Button.js',
           // 'src/js/components/DropButton/DropButton.js',
           // 'src/js/components/Menu/Menu.js',
-          // 'src/js/components/Tab/Tab.js',
-          // 'src/js/components/Tabs/Tabs.js',
+          'src/js/components/Tab/Tab.js',
+          'src/js/components/Tabs/Tabs.js',
         ],
       },
       // {
@@ -62,7 +62,7 @@ module.exports = {
       {
         name: 'Layout',
         include: [
-          'src/js/components/Box/Box/Box.js',
+          // 'src/js/components/Box/Box/Box.js',
           // 'src/js/components/Grid/Grid.js',
           // 'src/js/components/Stack/Stack.js',
         ],

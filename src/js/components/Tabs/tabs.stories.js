@@ -11,18 +11,16 @@ import {
   TreeOption,
 } from 'grommet-icons';
 
-import {
-  Box,
-  Heading,
-  Grommet,
-  FormField,
-  Tab,
-  Tabs,
-  Text,
-  TextInput,
-} from 'grommet';
 import { grommet } from 'grommet/themes';
 import { deepMerge } from 'grommet/utils';
+import Box from '../Box/Box/Box';
+import { Grommet } from '../Grommet';
+import Tabs from './Tabs';
+import Tab from '../Tab/Tab';
+import Text from '../Text/Text';
+import FormField from '../FormField/FormField';
+import TextInput from '../TextInput/TextInput';
+import Heading from '../Heading/Heading';
 
 const UncontrolledTabs = ({ plain }) => (
   <Grommet theme={grommet} full>
@@ -485,10 +483,10 @@ const ScrollableTabs = () => (
 );
 
 storiesOf('Tabs', module)
-  .add('Uncontrolled', () => <UncontrolledTabs />)
-  .add('Controlled', () => <ControlledTabs />)
-  .add('Responsive', () => <ResponsiveTabs />)
-  .add('Rich', () => <RichTabs />)
-  .add('Custom Theme', () => <CustomTabs />)
-  .add('Scrollable', () => <ScrollableTabs />)
-  .add('Plain', () => <UncontrolledTabs plain />);
+  .add('Uncontrolled', () => UncontrolledTabs())
+  // .add('Controlled', () => ControlledTabs())
+  // .add('Responsive', () => ResponsiveTabs())
+  .add('Rich', () => RichTabs())
+  .add('Custom Theme', () => CustomTabs())
+  .add('Scrollable', () => ScrollableTabs())
+  .add('Plain', () => UncontrolledTabs({plain: true}));
