@@ -57,13 +57,13 @@ const AnchorButton = () => (
   </Grommet>
 );
 
-const RouteButton = () => (
-  <Grommet theme={grommet}>
-    <Box align="center" pad="large">
-      <RoutedButton label="Go" path="/" />
-    </Box>
-  </Grommet>
-);
+// const RouteButton = () => (
+//   <Grommet theme={grommet}>
+//     <Box align="center" pad="large">
+//       <RoutedButton label="Go" path="/" />
+//     </Box>
+//   </Grommet>
+// );
 
 const CustomTagButton = () => (
   <Grommet theme={grommet}>
@@ -245,8 +245,8 @@ storiesOf('Button', module)
   .add('Disabled', () => SimpleButton({disabled: true}))
   .add('Plain', () => PlainButton())
   .add('Anchor', () => AnchorButton())
-  .add('RoutedButton', () => RouteButton())
-  .add('Active', () => PlainButton({active}))
+  // .add('RoutedButton', () => RouteButton())
+  .add('Active', () => PlainButton({active: true}))
   .add('Custom theme', () => CustomThemeButton())
   .add('Multiple Same Line', () => MultipleButton())
   .add('Colored', () => ColoredButton())

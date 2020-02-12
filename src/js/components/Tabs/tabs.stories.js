@@ -483,7 +483,7 @@ const ScrollableTabs = () => (
 );
 
 storiesOf('Tabs', module)
-  .add('Uncontrolled', () => UncontrolledTabs())
+  .add('Uncontrolled', () => UncontrolledTabs({plain: false}))
   // .add('Controlled', () => ControlledTabs())
   // .add('Responsive', () => ResponsiveTabs())
   .add('Rich', () => RichTabs())
