@@ -6,6 +6,7 @@ module.exports = {
       {
         name: "Evaluated components",
         include: [
+          "src/js/components/Box/Box.js",
           "src/js/components/Button/Button.js",
         ]
       }

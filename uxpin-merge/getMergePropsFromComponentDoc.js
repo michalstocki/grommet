@@ -95,6 +95,21 @@ class ShapePropertyTypeBuilder extends PropertyTypeBuilder {
     };
   }
 }
+class ArrayOfPropertyTypeBuilder extends PropertyTypeBuilder {
+  constructor(arrayItemType) {
+    super('arrayOf');
+    this.arrayItemType = arrayItemType;
+  }
+
+  getUXPinPropertyType() {
+    return {
+      name: 'typedArray',
+      structure: {
+        memberType: this.arrayItemType,
+      },
+    };
+  }
+}
 
 const serializingPropTypes = {
   get bool() {
@@ -109,6 +124,9 @@ const serializingPropTypes = {
   get string() {
     return new PropertyTypeBuilder('string');
   },
+  get number() {
+    return new PropertyTypeBuilder('number');
+  },
   shape(shape) {
     return new ShapePropertyTypeBuilder(shape);
   },
@@ -120,6 +138,9 @@ const serializingPropTypes = {
   },
   get func() {
     return new PropertyTypeBuilder('func');
+  },
+  arrayOf(type) {
+    return new ArrayOfPropertyTypeBuilder(type);
   },
 };
 
