@@ -10,6 +10,7 @@ module.exports = {
           "src/js/components/Button/Button.js",
           "src/js/components/Accordion/Accordion.js",
           "src/js/components/AccordionPanel/AccordionPanel.js",
+          "src/js/components/Calendar/Calendar.js",
         ]
       }
     ],
