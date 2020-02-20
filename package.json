@@ -41,7 +41,7 @@
     "storybook": "cross-env NODE_ENV=development start-storybook -p 9001 -c storybook -s ./storybook/public",
     "build-storybook": "build-storybook -c storybook -o storybook-static -s ./storybook/public",
     "prettier": "pretty-quick --staged",
-    "uxpin-merge": "uxpin-merge --config ./uxpin-merge/config.js"
+    "uxpin-merge": "uxpin-merge --config ./uxpin-merge/config.js --webpack-config ./uxpin-merge/webpack.config.js --wrapper ./uxpin-merge/Wrapper.js"
   },
   "peerDependencies": {
     "react": ">= 16.6.1",
