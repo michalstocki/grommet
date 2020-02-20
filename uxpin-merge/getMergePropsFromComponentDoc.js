@@ -10,6 +10,11 @@ class PropertyTypeBuilder {
     this.isPropRequired = true;
   }
 
+  get isRequired() {
+    this.isPropRequired = true;
+    return this;
+  }
+
   description(description) {
     this.propDescription = description;
     return this;
@@ -129,6 +134,9 @@ const serializingPropTypes = {
   },
   shape(shape) {
     return new ShapePropertyTypeBuilder(shape);
+  },
+  get object() {
+    return new PropertyTypeBuilder('object');
   },
   get element() {
     return new PropertyTypeBuilder('element');
