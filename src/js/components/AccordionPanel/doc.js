@@ -5,6 +5,8 @@ export function doc(Panel) {
     .description('An Accordion panel.')
     .intrinsicElement('div');
   DocumentedAccordionPanel.propTypes = {
+    children: PropTypes.node
+      .description('The contents of the panel'),
     label: PropTypes.oneOfType([PropTypes.string, PropTypes.node]).description(
       'The panel label.',
     ),

@@ -164,6 +164,8 @@ export const doc = Box => {
         ]).defaultValue('solid'),
       }),
     ]).description('Include a border.'),
+    children: PropTypes.node
+      .description('The contents of the box'),
     direction: PropTypes.oneOf([
       'row',
       'column',
