@@ -11,6 +11,7 @@ module.exports = {
           "src/js/components/Accordion/Accordion.js",
           "src/js/components/AccordionPanel/AccordionPanel.js",
           "src/js/components/Calendar/Calendar.js",
+          "src/js/components/Menu/Menu.js",
         ]
       }
     ],
