@@ -7,7 +7,7 @@ import { Grommet } from '../src/js/components/Grommet';
 
 export default function Wrapper({ children }) {
   return (
-    <Grommet theme={hp}>
+    <Grommet theme={dxc}>
       {children}
     </Grommet>
   );
