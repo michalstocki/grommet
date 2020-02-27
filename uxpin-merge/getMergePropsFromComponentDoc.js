@@ -39,7 +39,7 @@ class PropertyTypeBuilder {
     };
 
     if (typeof this.defaultPropValue !== 'undefined') {
-      serializedProperty.defaultValue = this.defaultPropValue;
+      serializedProperty.defaultValue = { value: this.defaultPropValue };
     }
 
     return serializedProperty;
